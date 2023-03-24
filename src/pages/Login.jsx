@@ -14,11 +14,11 @@ const LoginForm = () => {
         <h2>Iniciar Sesión</h2>
         </div>
     <Formik
-      initialValues={{ documento: "", email: "", password: "" }}
+      initialValues={{ /* documento: "", */ email: "", password: "" }}
       validationSchema={LOGIN_SCHEMA}
       onSubmit={(values, { setSubmitting, resetForm }) => {
         console.log(values, "<<<--Values OnSubmit LOGIN");
-        if (values.documento===12345678 && values.email==="admin@gmail.com" && values.password==="Admin123*"){
+        if (values.email==="admin@gmail.com" && values.password==="Admin123*"){
           
           let email = values.email;
           let password = values.password;
@@ -27,7 +27,7 @@ const LoginForm = () => {
           handleToast("success", "Bienvenido")
           login({ email, password })
           resetForm({
-            documento: "",
+            /* documento: "", */
             email: "",
             password: "",
           });
@@ -39,7 +39,7 @@ const LoginForm = () => {
       {props => (
         //los props son los valores que se envian al formulario y se pueden usar en el formulario
         <Form className="container">
-        <div className="form-group mb-3 w-100">
+        {/* <div className="form-group mb-3 w-100">
           <label htmlFor="documento">Documento</label>
           <Field name="documento" type="number" className="form-control" />
           <ErrorMessage
@@ -47,9 +47,9 @@ const LoginForm = () => {
             component="p"
             className="text-danger mt-1"
           />
-        </div>
+        </div> */}
         <div className="form-group mb-3 w-100">
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">Email ( admin@gmail.com ) </label>
           <Field name="email" type="email" className="form-control" />
           <ErrorMessage
             name="email"
@@ -58,7 +58,7 @@ const LoginForm = () => {
           />
         </div>
         <div className="form-group mb-3 w-100">
-          <label htmlFor="password">Password</label>
+          <label htmlFor="password">Password ( Admin123* ) </label>
           <Field name="password" type="password" className="form-control" />
           <ErrorMessage
             name="password"
