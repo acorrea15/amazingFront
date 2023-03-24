@@ -1,0 +1,5 @@
+.service_title {
+    color: var(--text-color-level2,rgba(26,26,26,0.61));
+    font-family: proxima nova,sans-serif;   
+}
+ 

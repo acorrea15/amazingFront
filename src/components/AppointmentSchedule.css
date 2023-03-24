@@ -1,0 +1,9 @@
+.appointmentschedule_form_select_text_size{       
+  font-size: 1px;    
+}
+
+  @media screen and (min-width: 756px) {
+    .appointmentschedule_form_select_text_size{       
+      font-size: 1px;    
+    }
+}

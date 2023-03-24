@@ -1,0 +1,8 @@
+.form_appointment {
+    border:2px solid #0808081a;
+    margin: 10px; 
+    padding: 30px;
+    border-radius: 9px;
+    background: #fccece06;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.119);
+  }
