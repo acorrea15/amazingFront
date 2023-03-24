@@ -17,7 +17,7 @@ const DashboardAppointments = () => {
     console.log(data, "data!!");
     console.log(data, "data!!")
      
-    window.location.href = `http://localhost:3000/service/${data.Service}`;
+    window.location.href = `https://amazing-admin.netlify.app/service/${data.Service}`;
 
 };
   console.log(errors);
